@@ -28,6 +28,9 @@ function getData(year){
 
         // remove loading screen
         loadingScreen.style.display = "none";
+    })
+    .catch(error => {
+        console.error("Error loading JSON:", error);
     });
 };
 
