@@ -8,7 +8,7 @@ getData("all");
 function getData(year){
     allData = [];
     loadingScreen.style.display = "flex";
-    d3.json("static/All-Presaved.json").then(data =>{
+    d3.json("https://github.com/Jadon55/p3-demp-site/blob/main/static/All-Presaved.json").then(data =>{
         data.forEach(element => {
             allData.push(element);
         });
